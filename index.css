@@ -6,3 +6,15 @@ html, body {
 	margin: 0;
 }
 
+.main {
+	display: grid;
+	grid-template-columns: 295px 424px 424px 295px;
+	grid-template-rows: 100px 800px;
+}
+
+.header {
+	display: grid;
+	grid-column: span 4;
+	padding-left: 80px;
+	padding-right: 80px;
+}
