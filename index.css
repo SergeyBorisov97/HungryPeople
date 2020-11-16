@@ -1,3 +1,4 @@
+@import url('//db.onlinewebfonts.com/c/629a55a7e793da068dc580d184cc0e31?family=Open+Sans');
 * {
 	box-sizing: border-box;
 }
@@ -6,15 +7,125 @@ html, body {
 	margin: 0;
 }
 
-.main {
-	display: grid;
-	grid-template-columns: 295px 424px 424px 295px;
-	grid-template-rows: 100px 800px;
+p {
+	margin: 0;
+	margin-block-start: 0;
+	margin-block-end: 0;
 }
 
-.header {
+/*
+	CSS rules for main block
+*/
+
+.main {
+	align-self: center;
+	display: grid;
+	grid-template-columns: 295px 425px 425px 295px;
+	grid-template-rows: 100px 700px;
+	background: url(img/header-bg.jpg) no-repeat;
+	background-size: contain;
+}
+
+.header_nav {
+	position: relative;
 	display: grid;
 	grid-column: span 4;
 	padding-left: 80px;
 	padding-right: 80px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1.07fr 1fr 1fr 1fr 1fr;
 }
+
+.header_nav_menu-item {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	min-width: 134px;
+	max-height: 100px;
+	height: 100%;
+	font-family: 'Open Sans', 'Segoe UI', sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 18px;
+	justify-content: center;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	background: transparent;
+}
+
+.header_nav_menu-item a:hover {
+	cursor: pointer;
+	font-weight: 900;
+	box-shadow: 0 0 30px #DBDBDB;
+}
+
+.header_nav_menu-item a {
+	align-self: center;
+	text-align: center;
+}
+
+.header_nav_logo {
+	position: relative;
+	top: 25px;
+	width: 150px;
+	height: 150px;
+	background: url(img/steer.svg) no-repeat;
+	overflow: visible;
+	margin-left: 35px;
+	margin-right: 35px;
+}
+
+.main_content {
+	grid-column: span 2;
+}
+
+.sidebar_left {
+	position: relative;
+	display: block;
+	font-family: 'Open Sans', 'Segoe UI', sans-serif;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 12px;
+	text-align: center;
+	--sidebar-height: height;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	border-right: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.vertical_text {
+	position: relative;
+	top: 360px;
+	height: 100%;
+	transform-origin: center;
+	transform: rotate(-90deg);
+	height: var(--sidebar-height);
+}
+
+.sidebar_right {
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+	padding: 240px 79px 240px 155px;
+}
+
+.socials_icons_container :not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.socials_icon_fb {
+	width: 60px;
+	height: 60px;
+}
+
+.socials_icon_tw {
+	width: 60px;
+	height: 60px;
+}
+
+.socials_icon_ig {
+	width: 60px;
+	height: 60px;
+}
+
+/*
+	CSS rules for 
+*/
